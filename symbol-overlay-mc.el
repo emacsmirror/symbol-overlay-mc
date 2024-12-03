@@ -34,7 +34,6 @@
 (defun symbol-overlay-mc-mark-all ()
   "Mark all symbol overlays using multiple cursors."
   (interactive)
-  (require 'multiple-cursors-core)
   (when-let* ((overlays (symbol-overlay-get-list 0))
               (point (point))
               (point-overlay (seq-find
