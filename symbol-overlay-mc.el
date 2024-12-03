@@ -52,6 +52,8 @@
           overlays)
     (mc/maybe-multiple-cursors-mode)))
 
+(add-to-list 'mc--default-cmds-to-run-once 'symbol-overlay-mc-mark-all t)
+
 (provide 'symbol-overlay-mc)
 
 ;;; symbol-overlay-mc.el ends here
