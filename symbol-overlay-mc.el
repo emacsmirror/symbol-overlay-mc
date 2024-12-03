@@ -1,4 +1,4 @@
-;;; symbol-overlay-mc.el --- symbol-overlay extensions to multiple-cursors  -*- lexical-binding: t -*-
+;;; symbol-overlay-mc.el --- Symbol overlay extensions for multiple cursors  -*- lexical-binding: t -*-
 
 ;; Copyright (C) 2024 Alvaro Ramirez
 
