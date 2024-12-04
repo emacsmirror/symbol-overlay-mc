@@ -53,6 +53,12 @@
 
 (add-to-list 'mc--default-cmds-to-run-once 'symbol-overlay-mc-mark-all t)
 
+;;;###autoload
+(with-eval-after-load 'casual-symbol-overlay
+  (transient-append-suffix 'casual-symbol-overlay-tmenu '(-2)
+    ["Multiple cursors"
+     ("c" "Mark all" symbol-overlay-mc-mark-all)]))
+
 (provide 'symbol-overlay-mc)
 
 ;;; symbol-overlay-mc.el ends here
