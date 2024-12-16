@@ -28,6 +28,11 @@
 ;; the symbol currently under the cursor) and the `multiple-cursors'
 ;; package.  Invoke function `symbol-overlay-mc-mark-all' to place a
 ;; cursor on every symbol currently highlighted.
+;;
+;; If you wish to add this to the transient menu provided by the
+;; `casual-symbol-overlay' package, add the following to your init file:
+;; (with-eval-after-load 'casual-symbol-overlay
+;;   (symbol-overlay-mc-insert-into-casual-tmenu)
 
 ;;; Code:
 
@@ -59,10 +64,12 @@
 (add-to-list 'mc--default-cmds-to-run-once 'symbol-overlay-mc-mark-all t)
 
 ;;;###autoload
-(with-eval-after-load 'casual-symbol-overlay
+(defun symbol-overlay-mc-insert-into-casual-tmenu ()
+  (interactive)
+  (require 'casual-symbol-overlay
   (transient-append-suffix 'casual-symbol-overlay-tmenu '(-2)
     ["Multiple cursors"
-     ("c" "Mark all" symbol-overlay-mc-mark-all)]))
+     ("c" "Mark all" symbol-overlay-mc-mark-all)])))
 
 (provide 'symbol-overlay-mc)
 
