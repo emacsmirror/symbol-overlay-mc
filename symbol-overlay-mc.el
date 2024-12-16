@@ -1,10 +1,11 @@
-;;; symbol-overlay-mc.el --- Symbol overlay extensions for multiple cursors  -*- lexical-binding: t -*-
+;;; symbol-overlay-mc.el --- Mark highlighted symbols with multiple cursors  -*- lexical-binding: t -*-
 
 ;; Copyright (C) 2024 Alvaro Ramirez
 
 ;; Author: Alvaro Ramirez https://lmno.lol/alvaro
 ;; URL: https://github.com/xenodium/symbol-overlay-mc
 ;; Version: 0.1.1
+;; Keywords: convenience
 ;; Package-Requires: ((emacs "28.1") (multiple-cursors "1.4.0") (symbol-overlay "4.1"))
 
 ;; This package is free software; you can redistribute it and/or modify
@@ -22,7 +23,11 @@
 
 ;;; Commentary:
 
-;; Invoke `symbol-overlay-mc-mark-all' to place cursors on each symbol overlay.
+;; This package provides integration between the `symbol-overlay'
+;; package (which will highlight all instances in the current buffer of
+;; the symbol currently under the cursor) and the `multiple-cursors'
+;; package.  Invoke function `symbol-overlay-mc-mark-all' to place a
+;; cursor on every symbol currently highlighted.
 
 ;;; Code:
 
