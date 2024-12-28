@@ -1,6 +1,6 @@
 *  Symbol overlay multiple cursors (symbol-overlay-mc)
 
-=symbol-overlay-mc= is a tiny Emacs package enabling multiple cursors on symbol overlays. It was born out of a small itch I wanted t scratch. Wrote about it [[https://lmno.lol/alvaro/its-all-up-for-grabs-and-it-compounds][here]]. The package lived in [[https://github.com/xenodium/dotsies/][my config]] until [[https://github.com/mavit][Peter Oliver]] kindly volunteered to bring to [[https://melpa.org/#/symbol-overlay-mc][MELPA]].
+=symbol-overlay-mc= is a tiny Emacs package enabling multiple cursors on symbol overlays. It was born out of a small itch I wanted to scratch. Wrote how I went about it [[https://lmno.lol/alvaro/its-all-up-for-grabs-and-it-compounds][here]]. The package lived in [[https://github.com/xenodium/dotsies/][my config]] until [[https://github.com/mavit][Peter Oliver]] kindly [[https://github.com/melpa/melpa/pull/9267][volunteered]] to bring to [[https://melpa.org/#/symbol-overlay-mc][MELPA]].
 
 #+HTML: <img src="https://raw.githubusercontent.com/xenodium/symbol-overlay-mc/main/demo.gif" width="80%" />
 
